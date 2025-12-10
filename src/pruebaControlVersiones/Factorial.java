@@ -18,17 +18,15 @@ public class Factorial {
 
 		} while (n <= 0);
 
-		System.out.printf("RESULTADO - En versiones posteriores se calculará el factorial del número " + n);
-
 	}
 
-	public int factorial(int n) {
-
-		int result = 1;
-		for (int i = 2; i <= n; i++) {
-			result *= i;
+	@SuppressWarnings("unused")
+	private static long factorialRec(int n) {
+		if (n == 0 || n == 1) {
+			return 1;
 		}
-		return result;
+
+		return n * factorialRec(n - 1);
 	}
 
 	public static void main(String[] args) {
