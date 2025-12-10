@@ -26,15 +26,18 @@ public class Factorial {
 			}
 		} while (!valido);
 
-		System.out.printf("RESULTADO - En versiones posteriores se calculará el factorial del número " + n);
+		System.out.printf("RESULTADO - En versiones posteriores se calculará el factorial del número " + n + " que es "
+				+ factorialBucle(n));
 
 	}
 
-	public int factorial(int n) {
+	private static long factorialBucle(int n) {
+		int result;
 
-		int result = 1;
-		for (int i = 2; i <= n; i++) {
-			result *= i;
+		if (n == 1 || n == 0) {
+			result = 1;
+		} else {
+			result = (int) (n * factorialBucle(n - 1));
 		}
 		return result;
 	}
