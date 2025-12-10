@@ -26,8 +26,7 @@ public class Factorial {
 			}
 		} while (!valido);
 
-		System.out.printf("RESULTADO - En versiones posteriores se calculará el factorial del número " + n + " que es "
-				+ factorialBucle(n));
+		System.out.println("RESULTADO - El factorial del número " + n + " es " + factorialBucle(n));
 
 	}
 
