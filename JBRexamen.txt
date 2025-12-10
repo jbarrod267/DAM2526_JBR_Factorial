@@ -1,0 +1,77 @@
+    1  history -w
+    2  cd eclipse-workspace
+    3  cd BarraganRodriguezJuanManuel_Factorial
+    4  git init
+    5  git ignore
+    6  git add .
+    7  git commit -m "Version inicial que pide número y realiza comprobación"
+    8  git remote add origin https://github.com/jbarrod267/DAM2526_JBR_Factorial.git
+    9  git push -u origin master
+   10  git push -u origin master
+   11  git add .
+   12  git commit -m "Segunda versión del factorial"
+   13  git push -u origin master
+   14  git add .
+   15  git commit -m "Tercera versión del factorial"
+   16  git push -u origin master
+   17  git switch -c  factorial_recursivo
+   18  git add .
+   19  git commit -m "Versión F1 del factorial"
+   20  git push -u origin master
+   21  git add .
+   22  git commit -m "Versión F2 del factorial"
+   23  git push -u origin master
+   24  git add .
+   25  git commit -m "Versión F3 del factorial"
+   26  git push -u origin master
+   27  git log --oneline --graph --decorate
+   28  git add .
+   29  git commit -m "Versión F4 de subir foto"
+   30  git push -u origin master
+   31  git switch master
+   32  git config --global init.defaultBranch main
+   33  git add .
+   34  git commit -m "Versión D de Factorial"
+   35  git push -u origin master
+   36  git add .
+   37  git commit -m "Versión E de Factorial"
+   38  git push -u origin master
+   39  git add .
+   40  git commit -m "Versión F de Factorial"
+   41  git push -u origin master
+   42  git log --oneline --graph --decorate
+   43  git add .
+   44* 
+   45  git push -u origin master
+   46  git switch factorial_recursivo
+   47* git 
+   48  git rebase --continue
+   49  git add .
+   50  git push -u origin factorial_recursivo
+   51  git add .
+   52  git commit -m "Nueva versión de Factorial"
+   53  git push -u origin factorial_recursivo
+   54  git switch master
+   55  git rebase --quit
+   56  git switch master
+   57  git merge factorial_recursivo
+   58  git add .
+   59  git merge factorial_recursivo
+   60  git commit -m "Nueva versión recursiva de Factorial"
+   61  git merge factorial_recursivo
+   62  git add .
+   63  git commit -m "Nueva versión recursiva final de Factorial"
+   64  git push -u origin master
+   65  git log --oneline+
+   66  git log --oneline
+   67  git reset --soft d1025fa
+   68  git add .
+   69  git commit -m "Nueva versión usando git reset de Factorial"
+   70  git push -u origin master
+   71  git add .
+   72  git commit -m "Nueva versión usando git reset de Factorial"
+   73  git push -u origin master
+   74  git reflog
+   75  git checkout b7''3cf
+   76  git checkout b7003cf
+   77  history > JBRexamen.txt
