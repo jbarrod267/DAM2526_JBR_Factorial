@@ -9,14 +9,22 @@ public class Factorial {
 
 		Scanner keyboard = new Scanner(System.in);
 		int n;
+		boolean valido;
 
 		System.out.println("Llamada a la función con argumentos introducidos por el usuario: ");
 
 		do {
-			System.out.println("Introduzca un número entero positivo: ");
-			n = keyboard.nextInt();
-
-		} while (n <= 0);
+			System.out.print("Introduce un número entero mayor o igual que 0: ");
+			if (keyboard.hasNextInt()) {
+				n = keyboard.nextInt();
+				valido = true;
+			} else {
+				System.out.println("Entrada no válida. Introduce un entero.");
+				keyboard.next();
+				valido = false;
+				n = -1;
+			}
+		} while (!valido);
 
 		System.out.printf("RESULTADO - En versiones posteriores se calculará el factorial del número " + n);
 
