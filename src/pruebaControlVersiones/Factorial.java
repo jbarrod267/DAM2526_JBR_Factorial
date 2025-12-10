@@ -4,19 +4,33 @@ import java.util.Scanner;
 
 public class Factorial {
 
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+	@SuppressWarnings("resource")
+	public void show() {
 
-		System.out.print("Introduce un número entero mayor o igual que 0: ");
-		int num = sc.nextInt();
+		Scanner keyboard = new Scanner(System.in);
+		int n;
 
-		if (num < 0) {
-			System.out.println("ERROR: el número debe ser mayor o igual que 0.");
-		} else {
-			System.out.println("Has introducido el número: " + num);
+		System.out.println("Llamada a la función con argumentos introducidos por el usuario: ");
+
+		do {
+			System.out.println("Introduzca un número entero positivo: ");
+			n = keyboard.nextInt();
+
+		} while (n <= 0);
+
+	}
+
+	public int factorial(int n) {
+
+		int result = 1;
+		for (int i = 2; i <= n; i++) {
+			result *= i;
 		}
+		return result;
+	}
 
-		sc.close();
+	public static void main(String[] args) {
+		new Factorial().show();
 	}
 
 }
