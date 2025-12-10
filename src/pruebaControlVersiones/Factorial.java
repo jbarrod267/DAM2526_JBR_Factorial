@@ -18,6 +18,8 @@ public class Factorial {
 
 		} while (n <= 0);
 
+		System.out.printf("RESULTADO - En versiones posteriores se calculará el factorial del número " + n);
+
 	}
 
 	public int factorial(int n) {
