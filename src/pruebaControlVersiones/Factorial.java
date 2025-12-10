@@ -27,6 +27,7 @@ public class Factorial {
 		} while (!valido);
 
 		System.out.println("RESULTADO - El factorial del número " + n + " es " + factorialBucle(n));
+		System.out.println("Proceso completado usando el método recursivo.");
 
 	}
 
