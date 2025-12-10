@@ -18,6 +18,8 @@ public class Factorial {
 
 		} while (n <= 0);
 
+		System.out.println("RESULTADO - El factorial del número " + n + " es " + factorialRec(n));
+
 	}
 
 	@SuppressWarnings("unused")
